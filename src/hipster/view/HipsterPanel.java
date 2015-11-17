@@ -26,7 +26,8 @@ public class HipsterPanel extends JPanel
 	{
 		this.baseController = baseController;
 		baseLayout = new SpringLayout();
-		changeBookButton = new JButton("Change Books");
+		phraseComboBox = new JComboBox<String>();
+		
 		
 		setupComboBox();
 		setupPanel();
@@ -53,6 +54,7 @@ public class HipsterPanel extends JPanel
 		//From GUI
 	}
 	
+	
 	private void setupListeners()
 	{
 		phraseComboBox.addActionListener(new ActionListener()
@@ -67,11 +69,6 @@ public class HipsterPanel extends JPanel
 				baseController.getBaseFrame().setTitle(updatedTitle);
 			}
 		});
-	}
-	
-	private void setupListeners()
-	{
-		phraseComboBox.addActionListener(new ActionListener())  //Missing
 		
 	}
 	

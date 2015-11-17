@@ -19,7 +19,7 @@ public class HipsterFrame extends JFrame
 	
 	public String getResponse(String prompt)
 	{
-		String response = JOptionPane.showInputDialog(this, prompt);
+		String response = JOptionPane.showInputDialog(this, prompt); // "this" means in the app.
 		return response;
 	}
 	
