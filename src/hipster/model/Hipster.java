@@ -4,13 +4,16 @@ public class Hipster
 {
 	private String name;
 	private String [] hipsterPhrases;
+	private Book [] hipsterBooks;
 
 	
 	public Hipster()
 	{
 		this.name = "";
 		this.hipsterPhrases = new String[4];
+		this.hipsterBooks = new Book[3];
 		setupArray();
+		setupBooks();
 	}
 	
 	private void setupArray()
@@ -43,5 +46,51 @@ public class Hipster
 		this.hipsterPhrases = hipsterPhrases;
 	}
 
+	
+	private void setupBooks()
+	{
+		Book firstBook, secondBook, thirdBook;
+		
+		firstBook = new Book();
+		firstBook.setAuthor("Gage Hopkins");
+		firstBook.setTitle("Netflix and Gage");
+		firstBook.setSubject("Sci-Fi Fantasy");
+		firstBook.setPageCount(302);
+		firstBook.setPrice(23.98);
+		
+		secondBook = new Book();
+		secondBook.setAuthor("Brandon Sanderson");
+		secondBook.setTitle("Alcaraz vs the Evil Librarians");
+		secondBook.setSubject("fantasy");
+		secondBook.setPageCount(300);
+		secondBook.setPrice(23.98);
+		
+		thirdBook = new Book();
+		thirdBook.setAuthor("J. K. Rowlings");
+		thirdBook.setTitle("Harry Potter and the Sorcerer's Stone");
+		thirdBook.setSubject("Fantasy");
+		thirdBook.setPageCount(300);
+		thirdBook.setPrice(252.58);
+		
+		hipsterBooks[0] = firstBook;
+		hipsterBooks[1] = secondBook;
+		hipsterBooks[2] = thirdBook;
+		
+	}
+	
+	public Hipster(String name)
+	{
+		this.name = name;
+	}
+
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
 	
 }
