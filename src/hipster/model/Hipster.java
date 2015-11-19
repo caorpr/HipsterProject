@@ -53,14 +53,14 @@ public class Hipster
 		
 		firstBook = new Book();
 		firstBook.setAuthor("Gage Hopkins");
-		firstBook.setTitle("Netflix and Gage");
+		firstBook.setTitle("Gage's Life");
 		firstBook.setSubject("Sci-Fi Fantasy");
 		firstBook.setPageCount(302);
 		firstBook.setPrice(23.98);
 		
 		secondBook = new Book();
 		secondBook.setAuthor("Brandon Sanderson");
-		secondBook.setTitle("Alcaraz vs the Evil Librarians");
+		secondBook.setTitle("Alcatraz vs the Evil Librarians");
 		secondBook.setSubject("fantasy");
 		secondBook.setPageCount(300);
 		secondBook.setPrice(23.98);
