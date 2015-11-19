@@ -54,22 +54,22 @@ public class Hipster
 		firstBook = new Book();
 		firstBook.setAuthor("Gage Hopkins");
 		firstBook.setTitle("Gage's Life");
-		firstBook.setSubject("Sci-Fi Fantasy");
-		firstBook.setPageCount(302);
-		firstBook.setPrice(23.98);
+		firstBook.setSubject("Fiction");
+		firstBook.setPageCount(1001);
+		firstBook.setPrice(0.01);
 		
 		secondBook = new Book();
 		secondBook.setAuthor("Brandon Sanderson");
 		secondBook.setTitle("Alcatraz vs the Evil Librarians");
-		secondBook.setSubject("fantasy");
-		secondBook.setPageCount(300);
+		secondBook.setSubject("Fantasy");
+		secondBook.setPageCount(256);
 		secondBook.setPrice(23.98);
 		
 		thirdBook = new Book();
 		thirdBook.setAuthor("J. K. Rowlings");
 		thirdBook.setTitle("Harry Potter and the Sorcerer's Stone");
 		thirdBook.setSubject("Fantasy");
-		thirdBook.setPageCount(300);
+		thirdBook.setPageCount(2793);
 		thirdBook.setPrice(252.58);
 		
 		hipsterBooks[0] = firstBook;
